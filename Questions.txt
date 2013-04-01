@@ -1,0 +1,17 @@
+1. You computed the set of connected components for both the original graph, as well as the graph with the root removed. How did these sets differ? 
+
+
+2. What type of graph representation was contained in the JSON files? 
+
+3. Name three differences between the graph centrality measures, making reference to each one. 
+
+4. What is a clique? 
+A clique is basically a group of nodes where every node is connected to every other by an edge. 
+
+5. How does the method in which we are generating edge weights impact/in uence Dijkstra's shortest path algorithm? 
+
+6. For the following algorithms, describe your code's big-Oh runtime and explain if they're running optimally:   DFS   BFS   FakebookReader (graph creation)   MST   FakebookReader.getConnectedComponentsWithoutRoot() 
+
+7. Finally, write two pararaphs on design choices you made, justifying them in terms of runtime and space effciency.
+I mainly used HashMaps when I had to implement things like Fakebook Reader or MST where
+I had to grab friends of a speficid Id or based on some other characteristic. Using HashMaps was a smart choice because it has O(1) of grabbing the appropriate data. This is ofcourse ideal in all algorithimc choices. It is also space effecient because it only stores as much space as there are elements in the map. I once use the treemap. because it does dynamic sorting for me which was much easier to manipulate in the sorting of the ids and weights. 
